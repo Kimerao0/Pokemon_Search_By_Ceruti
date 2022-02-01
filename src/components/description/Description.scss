@@ -1,0 +1,78 @@
+.description-container {
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  margin: 40px auto 20px;
+  background-color: white;
+  padding: 25px;
+  border-style: double;
+  border-color: black;
+  font-family: "Press Start 2P", cursive;
+  position: relative;
+  button {
+    &.close {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 0px;
+      border: 0px;
+      background-color: white;
+      svg {
+        font-size: 42px;
+        color: #dd4f5a;
+        margin-top: -1px;
+        margin-left: -1px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &.favourite {
+      color: black;
+      background-color: #ffcd41;
+      border: 1px solid black;
+      padding: 15px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 10px;
+      margin-top: 20px;
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
+      &:disabled {
+        background-color: #ababab;
+        border: 3px solid #696969;
+        color: #cfcfcf;
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  h3 {
+    text-transform: capitalize;
+  }
+  h4 {
+    font-size: 13px;
+  }
+  p {
+    line-height: 30px;
+    font-size: 15px;
+    color: black;
+  }
+}
+
+@media (max-width: 400px) {
+  .description-container {
+    margin: 30px auto 20px;
+    padding: 15px;
+    p {
+      line-height: 25px;
+      font-size: 14px;
+    }
+  }
+}

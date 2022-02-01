@@ -1,0 +1,44 @@
+.notificationBar {
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  color: white;
+  z-index: 1000;
+  background-color: red;
+  &.green {
+    background-color: green;
+  }
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.notificationBar {
+  animation-name: myAnimation;
+  animation-duration: 7000ms;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 400px) {
+  .notificationBar {
+    p {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  }
+}

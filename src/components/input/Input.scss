@@ -1,0 +1,48 @@
+.input-container {
+  margin: 40px auto 20px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  input,
+  p {
+    width: 85%;
+    margin: 5px auto;
+    display: block;
+  }
+  input {
+    height: 50px;
+    font-size: 16px;
+    padding: 15px 50px 15px 15px;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+    &:focus-visible {
+      outline: #fff auto 0px;
+    }
+  }
+  svg {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    font-size: 18px;
+    color: #6a6a6a;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  p {
+    &.error-input {
+      position: absolute;
+      font-size: 13px;
+      padding-left: 10px;
+      color: #7e0c00;
+      top: -25px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &.error-inside {
+    input {
+      border: 3px solid #a91000;
+    }
+  }
+}

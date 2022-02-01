@@ -1,0 +1,75 @@
+.favourite-list-container {
+  button {
+    color: white;
+    background-color: #ff9e41;
+    border: 1px solid black;
+    padding: 15px 25px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &:hover {
+      cursor: pointer;
+      color: #ff9e41;
+      background-color: white;
+      border: 3px solid #ff9e41;
+      margin-bottom: 26px;
+    }
+  }
+  ul {
+    width: 100%;
+    max-width: fit-content;
+    text-align: center;
+    margin: 0px auto 20px;
+    background-color: white;
+    padding: 25px;
+    border-style: double;
+    border-color: black;
+    font-family: "Press Start 2P", cursive;
+    position: relative;
+    list-style: none;
+    li {
+      display: flex;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid;
+      padding-top: 5px;
+      &:first-child {
+        padding-top: 0px;
+      }
+      &:last-child {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border-bottom: 0px solid;
+      }
+      p {
+        text-transform: capitalize;
+        margin-bottom: 7px;
+        margin-top: 7px;
+        font-size: 14px;
+        margin-right: 35px;
+      }
+      button {
+        color: black;
+        background-color: #ffffff;
+        border: 1px solid black;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(167, 0, 0);
+          color: white;
+          margin-bottom: 0px;
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+}
